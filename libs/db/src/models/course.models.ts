@@ -15,6 +15,7 @@ export class Course{
     @Prop()
     cover:string
 
+    @ApiProperty({description:"课时"})
     @Prop({type:()=>[Episode]})
     episodes:Ref<Episode>[]
 
